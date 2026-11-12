@@ -2,6 +2,9 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>DaonPay API Documentation</title>
   <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
 </head>
@@ -11,7 +14,7 @@
   <script>
     window.onload = () => {
       window.ui = SwaggerUIBundle({
-        url: './swagger.yaml',
+        url: './swagger.yaml?v=' + new Date().getTime(),
         dom_id: '#swagger-ui',
       });
     };
