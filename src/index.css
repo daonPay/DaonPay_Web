@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* 다온페이 디자인 토큰 (Figma 'Design System' 기준) */
+@theme {
+  --font-sans: "Noto Sans KR", system-ui, -apple-system, sans-serif;
+
+  --color-brand: #1f5bd8;
+  --color-brand-dark: #1849b3;
+  --color-brand-soft: #e8f0fe;
+  --color-navy: #0b2a5b;
+  --color-navy-light: #183d78;
+  --color-ink: #191f28;
+  --color-sub: #5b6472;
+  --color-mute: #9aa1ac;
+  --color-line: #e3e7ee;
+  --color-surface: #f4f6fa;
+  --color-page: #f3f5f9;
+
+  --color-ok: #1a7f43;
+  --color-ok-soft: #e9f7ef;
+  --color-warn: #b25e00;
+  --color-warn-soft: #fff4e0;
+  --color-danger: #c62828;
+  --color-danger-soft: #fdecec;
+  --color-pin: #e5484d;
+  --color-park: #dcebd8;
+}
+
+/* 접근성 설정의 '글자 크기'가 html font-size를 바꿔 전체 화면에 적용돼요 */
+html {
+  font-size: var(--app-font-size, 16px);
+}
+
+body {
+  @apply bg-page font-sans text-ink antialiased;
+  word-break: keep-all;
+}
